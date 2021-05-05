@@ -202,21 +202,6 @@ module.exports = function (req, res, url) {
 		<script>
 			document.title='${title}',flashvars=${JSON.stringify(params.flashvars)}
 		</script>
-		<script>
-			if(window.location.pathname == '/player') {
-				function hideHeader() {
-					document.getElementById("header").style.display = "none";
-				}
-			} else if(window.location.pathname == '/recordWindow') {
-				function hideHeader() {
-					document.getElementById("header").style.display = "none";
-				}
-			} else if(window.location.pathname == '/go_full') {
-				function hideHeader() {
-					document.getElementById("header").style.display = "none";
-				}
-			}
-		</script>
                 <script src="/pages/js/githubtip1.js"></script>
                 
 		<style>
@@ -577,13 +562,28 @@ module.exports = function (req, res, url) {
 	<form enctype='multipart/form-data' action='/upload_movie' method='post' style="display: none">
 	<input id='file' type="file" onchange="this.form.submit()" name='import' accept=".xml" style="display: none"/>
         </form>
+        <form enctype='multipart/form-data' action='/upload_character' method='post' style="display: none">
+	<input id='file' type="file2" onchange="this.form.submit()" name='import' accept=".xml" style="display: none"/>
+        </form>
 	<header id="header">
-		<a href="/"><h1 style="margin:0"><img id="logo" src="/pages/assets/logo.png" alt="Wrapper: Offline"/></h1>
-		<nav id="headbuttons">
-			<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-			<a href="/pages/html/create.html" class="button_big">CREATE</a>
-		</nav>
-	</header>
+		<body>
+	<header>
+		<div>
+			<div>
+				<a href="./"><img src="logo.png" /></a>
+				<span>VERSIÖN</span>
+			</div>
+	<div id="headbuttons">
+		<div class="char_dropdown button_small">
+			<div class="dropdown_button">UPLOAD</div>
+			<menu>
+				<a onclick="document.getElementById('file').click()">A MOVIE</a>
+                <a onclick="document.getElementById('file2').click()">A CHARACTER</a>
+			</menu>
+		</div>
+		<a href="/go_full" class="button_big">MAKE A VIDEO</a>
+	</nav>
+</header>
 	
 	<body style="margin:0px" onload="hideHeader()">${toObjectString(attrs, params)
 		}</body>${stuff.pages[url.pathname] || ''}`)
