@@ -7,7 +7,6 @@
 			</div>
 	<div id="headbuttons">
 		<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-		<a class="button_small" onclick="document.getElementById('file2').click()">UPLOAD A CHARACTER</a>
 		<div class="char_dropdown button_small">
 			<div class="dropdown_button">CREATE A CHARACTER</div>
 			<menu>
@@ -55,9 +54,6 @@
 	</div>
 	<form enctype='multipart/form-data' action='/upload_movie' method='post'>
 		<input id='file' type="file" onchange="this.form.submit()" name='import' accept=".xml" />
-	</form>
-        <form enctype='multipart/form-data' action='/upload_character' method='post'>
-		<input id='file' type="file2" onchange="this.form.submit()" name='import' accept=".xml" />
 	</form>
 	</main>
 	<script src="../js/GetMovieListGrid.js"></script>
