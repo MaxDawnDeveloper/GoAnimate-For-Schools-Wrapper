@@ -218,8 +218,7 @@ module.exports = function (req, res, url) {
 			}
 		</script>
                 <script src="/pages/js/githubtip1.js"></script>
-		<link rel="stylesheet" type="text/css" href="/pages/css/modern-normalize.css">
-		<link rel="stylesheet" type="text/css" href="/pages/css/global.css">
+
 		<style>
 			body {
 				background: #eee;
