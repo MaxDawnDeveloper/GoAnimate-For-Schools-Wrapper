@@ -575,7 +575,6 @@ module.exports = function (req, res, url) {
 			</div>
 	<div id="headbuttons">
 		<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-                <a class="button_small" onclick="document.getElementById('file2').click()">UPLOAD A CHARACTER</a>
 		<a href="/go_full" class="button_big">MAKE A VIDEO</a>
 	</nav>
 </header>
