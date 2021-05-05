@@ -574,13 +574,8 @@ module.exports = function (req, res, url) {
 				<span>VERSIÖN</span>
 			</div>
 	<div id="headbuttons">
-		<div class="char_dropdown button_small">
-			<div class="dropdown_button">UPLOAD</div>
-			<menu>
-				<a onclick="document.getElementById('file').click()">A MOVIE</a>
-                <a onclick="document.getElementById('file2').click()">A CHARACTER</a>
-			</menu>
-		</div>
+		<a onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
+                <a onclick="document.getElementById('file2').click()">UPLOAD A CHARACTER</a>
 		<a href="/go_full" class="button_big">MAKE A VIDEO</a>
 	</nav>
 </header>
