@@ -523,37 +523,37 @@ module.exports = function (req, res, url) {
 		@font-face {
 			font-family: 'Sailec';
 			font-weight: 100;
-			src: url('/html/Sailec-Thin.woff') format('woff');
+			src: url('/pages/html/Sailec-Thin.woff') format('woff');
 		}
 
 		@font-face {
 			font-family: 'Sailec';
 			font-weight: 200;
-			src: url('/html/Sailec-Light.woff') format('woff');
+			src: url('/pages/html/Sailec-Light.woff') format('woff');
 		}
 
 		@font-face {
 			font-family: 'Sailec';
 			font-weight: 400;
-			src: url('/html/Sailec-Regular.woff') format('woff');
+			src: url('/pages/html/Sailec-Regular.woff') format('woff');
 		}
 
 		@font-face {
 			font-family: 'Sailec';
 			font-weight: 500;
-			src: url('/html/Sailec-Medium.woff') format('woff');
+			src: url('/pages/html/Sailec-Medium.woff') format('woff');
 		}
 
 		/* font weight 500 and font weight 700 (bold) are the same for better integration support */
 		@font-face {
 			font-family: 'Sailec';
 			font-weight: 700;
-			src: url('/html/Sailec-Medium.woff') format('woff');
+			src: url('/pages/html/Sailec-Medium.woff') format('woff');
 		}
 
 		@font-face {
 			font-family: 'GlyphiconsRegular';
-			src: url('/html/glyphicons-regular.woff') format('woff');
+			src: url('/pages/html/glyphicons-regular.woff') format('woff');
 			font-weight: normal;
 			font-style: normal;
 		}
