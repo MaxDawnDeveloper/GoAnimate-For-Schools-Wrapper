@@ -570,7 +570,7 @@ module.exports = function (req, res, url) {
 	<header>
 		<div>
 			<div>
-				<a href="./"><img src="logo.png" /></a>
+				<a href="./"><img src="/pages/html/logo.png" /></a>
 				<span>VERSIÖN</span>
 			</div>
 	<div id="headbuttons">
