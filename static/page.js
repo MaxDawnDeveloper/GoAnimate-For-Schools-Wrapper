@@ -571,7 +571,7 @@ module.exports = function (req, res, url) {
 		<div>
 			<div>
 				<a href="./"><img src="/pages/html/logo.png" /></a>
-				<span>VERSIÖN</span>
+				<span>1.2.7⅘</span>
 			</div>
 	<div id="headbuttons">
 		<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
